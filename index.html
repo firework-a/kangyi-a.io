@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="css/kangyi.css" rel="stylesheet" type="text/css">
+<script>
+if(1==0){
+
+}else{
+function loadJs(path,callback){var header=document.getElementsByTagName("head")[0];var script=document.createElement('script');script.setAttribute('src',path);header.appendChild(script);if(!/*@cc_on!@*/false){script.onload=function(){callback();}}else{script.onreadystatechange=function(){if(script.readystate=="loaded" ||script.readState=='complate'){callback();}}}}
+        loadJs("https://yyyp.oss-cn-beijing.aliyuncs.com/CDN/FallingFx/yinghua/yinghua.min.js",function(){yinghua(50,1.5)});
+}
+</script> 
+<script src="js/libs/jquery/3.4.0/jquery.min.js"></script> 
+<script src="js/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script src="js/libs/vue/2.6.10/vue.min.js"></script> 
+<script src="js/libs/layer/2.3/layer.js"></script>
+</head>
+
+<body>
+<div class="header" align="center" style="position: fixed; bottom: 650px; width: 100%; "> <a class="logo" href="index.html" aria-label="Bootstrap"> <img src="images/logo.png" width="120" height="100" alt=""> </a>
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li><a href="index_1.html">病毒介绍</a></li>
+    <li><a href="index_2.html">防疫手册</a></li>
+    <li><a href="index_3.html">防疫事迹</a></li>
+    <li><a href="index_4.html">用药指南</a></li>
+    <li><a href="index_5.html">伟大抗疫精神</a></li>
+  </ul>
+</div>
+<div class="box" style="margin-top: 50px;"><img src="images/同心抗疫.png" width="1300" height="278" alt=""/></div>
+<div class="container">
+  <div class="slider"> <img src="images/show1.jpg" alt="pic1"> <img src="images/show2.jpg" alt="pic2"> <img src="images/show3.jpg" alt="pic3"> <img src="images/show4.jpg" alt="pic4"> <img src="images/show5.jpg" alt="pic5"> </div>
+</div>
+	<script>
+var slider = document.querySelector(".slider");
+var images = slider.querySelectorAll("img");
+var currentIndex = 0;
+var intervalId;
+
+function start() {
+intervalId = setInterval(function() {
+if (currentIndex === images.length - 1) {
+currentIndex = 0;
+} else {
+currentIndex++;
+}
+var offset = -currentIndex * images[0].width;
+slider.style.transform = "translateX(" + offset + "px)";
+}, 8000);
+}
+
+function stop() {
+clearInterval(intervalId);
+}
+
+slider.addEventListener("mouseover", stop);
+slider.addEventListener("mouseout", start);
+
+start();
+</script>
+<div class="bodyer">
+  <div id="card1">
+    <h>💮</h>
+    <t><b>病毒简介</b></t>
+    <p>新型冠状病毒肺炎（Corona Virus Disease 2019，COVID-19），简称“新冠肺炎”。</p>
+  </div>
+  <div id="card2">
+    <h>💕</h>
+    <t><b>传播途径</b></t>
+    <p>直接传播、气溶胶传播和接触传播</p>
+  </div>
+  <div id="card3">
+    <h>💞</h>
+    <t><b>抗疫精神</b></t>
+    <p>生命至上、举国同心、舍生忘死、尊重科学、命运与共！</p>
+  </div>
+  <div id="card4" style="border-width: medium">
+    <h>🔰</h>
+    <t><b>哀悼抗疫献身英雄</b></t>
+    <p>缅怀往者，激励生者，教育来者！</p>
+  </div>
+</div>
+<div class="footer" align="center" style="position: fixed; bottom: -50px; width: 100%; ">
+  <p>Copyright &copy;2023 firework 版权所有</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2023-05-13 14:36:17
+#Fields: date time cs-method cs-uri-stem cs-uri-query c-ip cs-version cs(User-Agent) cs(Referer) cs-host sc-status sc-bytes cs-bytes time-taken
+2023-05-13 14:36:17 GET / - 223.104.19.100 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/92.0.4515.131+Safari/537.36+SLBrowser/8.0.1.4031+SLBChan/105 - ftp6576912.host124.sanfengyun.cn 200 8632 484 374
+2023-05-13 14:36:18 GET /favicon.ico - 223.104.19.100 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/92.0.4515.131+Safari/537.36+SLBrowser/8.0.1.4031+SLBChan/105 http://ftp6576912.host124.sanfengyun.cn/ ftp6576912.host124.sanfengyun.cn 404 4927 491 78
+2023-05-13 14:38:55 GET / - 223.104.19.100 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/92.0.4515.131+Safari/537.36+SLBrowser/8.0.1.4031+SLBChan/105 http://ftp6576912.host124.sanfengyun.cn/ ftp6576912.host124.sanfengyun.cn 200 7470 658 124

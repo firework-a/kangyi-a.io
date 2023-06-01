@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 轮播图</title>
+<style>
+.container {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.slider {
+    width: 500%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.slider img {
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="slider"> <img src="images/show1.jpg" alt="pic1"> <img src="images/show2.jpg" alt="pic2"> <img src="images/show3.jpg" alt="pic3"> <img src="images/show4.jpg" alt="pic4"> <img src="images/show5.jpg" alt="pic4"> </div>
+</div>
+<script>
+var slider = document.querySelector(".slider");
+var images = slider.querySelectorAll("img");
+var currentIndex = 0;
+var intervalId;
+
+function start() {
+intervalId = setInterval(function() {
+if (currentIndex === images.length - 1) {
+currentIndex = 0;
+} else {
+currentIndex++;
+}
+var offset = -currentIndex * images[0].width;
+slider.style.transform = "translateX(" + offset + "px)";
+}, 5000);
+}
+
+function stop() {
+clearInterval(intervalId);
+}
+
+slider.addEventListener("mouseover", stop);
+slider.addEventListener("mouseout", start);
+
+start();
+</script>
+</body>
+</html>
